@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  background-color: aliceblue;
+  width: 320px;
+  border: 1px solid blue;
+  padding: 8px;
+  cursor: pointer;
+}
