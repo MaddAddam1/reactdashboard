@@ -15,6 +15,7 @@ import { CardMDB, ButtonMDB, CardHeader, CardFooterMDB, CardBody,
     CardTitle, CardTextMDB } from './../../node_modules/mdbreact';
 
 
+
 const styles = theme => ({
     button: {
       margin: theme.spacing.unit,
@@ -39,8 +40,18 @@ const styles = theme => ({
   });
 
 
-function ScriptContent(props) {
 
+
+class ScriptContent extends Component {
+    
+    
+    state = {};
+
+    handlePass() {
+        
+    }
+
+    render() {
         return (
         <Card >
          
@@ -53,7 +64,7 @@ function ScriptContent(props) {
                             Script author: <br/>
                             Last run by: <br/>
                             Last modified by: <br/>
-                        </Typography>
+                        </Typography><br/>
                    
                 
                     <Typography paragraph>
@@ -67,17 +78,20 @@ function ScriptContent(props) {
                 </CardContent>
 
                 <CardActions>
+
+                   <MuiThemeProvider theme={buttonFail}>
+                        <Button variant="contained" color="primary" >
+                        Fail
+                        </Button>
+                    </MuiThemeProvider>
+
                     <MuiThemeProvider theme={buttonPass}>
                         <Button variant="contained" color="primary" >
                         Pass
                         </Button>
                     </MuiThemeProvider>
+             
 
-                    <MuiThemeProvider theme={buttonFail}>
-                        <Button variant="contained" color="primary" >
-                        Fail
-                        </Button>
-                    </MuiThemeProvider>
                 </CardActions>
               
         </Card>
@@ -87,7 +101,7 @@ function ScriptContent(props) {
     
 
 
-    
+    }
 
 
 

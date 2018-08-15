@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import Steps, { Step } from '../../node_modules/rc-steps';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent'
+import CardContent from '@material-ui/core/CardContent';
 
 function generateSteps() {
     const arr = [];

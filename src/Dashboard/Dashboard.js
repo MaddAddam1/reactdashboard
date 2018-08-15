@@ -170,7 +170,7 @@ class Dashboard extends React.Component {
             <ScriptStepsBar/>
             <Divider />
             <div className={classes.tableContainer}>
-              <ScriptContent /> 
+              <ScriptContent click={this.nextStep}/> 
             </div>
           </main>
         </div>
